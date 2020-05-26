@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
+$bgcolor: #66c2ff;
+
+$font-stack: 'Raleway', sans-serif;
+
+// const colorArr = ['#809fff', '#d9b3ff', '#ff944d', '#ffff66', '#b3ffff', '#70db70', '#cc9966', '#a3c2c2', '#66c2ff', '#bfbfbf'];
+// background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,60,121,1) 15%, rgba(0,212,255,1) 85%) no-repeat fixed center;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.4;
+  text-align: center;
+  margin: auto;
+  background: #474747;
+}
+
+#contain {
+  padding-top: 50px;
+  margin: auto;
+  color: #fff;
+
+  #head {
+    font-size: 60px;
+    font-family: $font-stack;
+    padding-bottom: 25px;
+  }
+
+  #quote-box {
+    font-family: $font-stack;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    height: 100%;
+    background-color: darken($bgcolor, 10%);
+
+    #data {
+      border-style: double;
+      border-radius: 5px;
+      font-size: 25px;
+      padding: 10px;
+      display: inline-block;
+
+      #author {
+        margin-top: 10px;
+        float: right;
+      }
+    }
+
+    #action {
+      padding-top: 25px;
+      position: relative;
+      bottom: 0px;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+
+      #tweet-quote {
+        border-radius: 5px;
+        background-color: #fff;
+
+        #icon {
+          color: #2574f4;
+          margin: 5px;
+          padding: 2px 1px 1px 1px;
+
+          &:hover {
+            color: #4287f5;
+          }
+        }
+      }
+
+      #new-quote {
+        font-size: 20px;
+        background-color: #fff;
+        border-style: none;
+        border-radius: 5px;
+        padding: 5px;
+        font-family: $font-stack;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+  }
+}
