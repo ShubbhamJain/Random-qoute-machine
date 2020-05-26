@@ -1,6 +1,6 @@
-Live Demo - https://shubbhamjain.github.io/Random-qoute-machine/build/
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Live Demo - https://shubbhamjain.github.io/Random-qoute-machine/build/
 
 ## Available Scripts
 
